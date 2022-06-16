@@ -3584,6 +3584,7 @@ namespace ts.server.protocol {
         ES2020 = "ES2020",
         ES2021 = "ES2021",
         ES2022 = "ES2022",
+        ES2023 = "ES2023",
         ESNext = "ESNext"
     }
 
