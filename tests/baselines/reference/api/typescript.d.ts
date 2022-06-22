@@ -3164,6 +3164,7 @@ declare namespace ts {
         ES2020 = 7,
         ES2021 = 8,
         ES2022 = 9,
+        ES2023 = 10,
         ESNext = 99,
         JSON = 100,
         Latest = 99
