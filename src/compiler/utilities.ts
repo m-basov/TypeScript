@@ -645,6 +645,20 @@ namespace ts {
                 BigUint64Array: ["at"],
                 ObjectConstructor: ["hasOwn"],
                 Error: ["cause"]
+            },
+            es2023: {
+                Array: ["findLast", "findLastIndex"],
+                Int8Array: ["findLast", "findLastIndex"],
+                Uint8Array: ["findLast", "findLastIndex"],
+                Uint8ClampedArray: ["findLast", "findLastIndex"],
+                Int16Array: ["findLast", "findLastIndex"],
+                Uint16Array: ["findLast", "findLastIndex"],
+                Int32Array: ["findLast", "findLastIndex"],
+                Uint32Array: ["findLast", "findLastIndex"],
+                Float32Array: ["findLast", "findLastIndex"],
+                Float64Array: ["findLast", "findLastIndex"],
+                BigInt64Array: ["findLast", "findLastIndex"],
+                BigUint64Array: ["findLast", "findLastIndex"]
             }
         };
     }
