@@ -3148,7 +3148,6 @@ declare namespace ts {
         ES2020 = 7,
         ES2021 = 8,
         ES2022 = 9,
-        ES2023 = 10,
         ESNext = 99,
         JSON = 100,
         Latest = 99
@@ -9871,7 +9870,6 @@ declare namespace ts.server.protocol {
         ES2020 = "ES2020",
         ES2021 = "ES2021",
         ES2022 = "ES2022",
-        ES2023 = "ES2023",
         ESNext = "ESNext"
     }
     enum ClassificationType {
