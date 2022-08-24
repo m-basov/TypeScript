@@ -1,6 +1,7 @@
-// @target: es2023, esnext
+// @target: esnext
 
-[0].findLast((item) => item === 0);
+const itemNumber: number | undefined = [0].findLast((item) => item === 0);
+const itemString: string | undefined = ["string"].findLast((item) => item === "string");
 new Int8Array().findLast((item) => item === 0);
 new Uint8Array().findLast((item) => item === 0);
 new Uint8ClampedArray().findLast((item) => item === 0);
@@ -13,7 +14,8 @@ new Float64Array().findLast((item) => item === 0);
 new BigInt64Array().findLast((item) => item === BigInt(0));
 new BigUint64Array().findLast((item) => item === BigInt(0));
 
-[0].findLastIndex((item) => item === 0);
+const indexNumber: number = [0].findLastIndex((item) => item === 0);
+const indexString: number = ["string"].findLastIndex((item) => item === "string");
 new Int8Array().findLastIndex((item) => item === 0);
 new Uint8Array().findLastIndex((item) => item === 0);
 new Uint8ClampedArray().findLastIndex((item) => item === 0);

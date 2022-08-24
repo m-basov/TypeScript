@@ -14,8 +14,6 @@ namespace ts {
         switch (getEmitScriptTarget(options)) {
             case ScriptTarget.ESNext:
                 return "lib.esnext.full.d.ts";
-            case ScriptTarget.ES2023:
-                return "lib.es2023.full.d.ts";
             case ScriptTarget.ES2022:
                 return "lib.es2022.full.d.ts";
             case ScriptTarget.ES2021:
