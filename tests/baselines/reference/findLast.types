@@ -1,5 +1,6 @@
 === tests/cases/compiler/findLast.ts ===
-[0].findLast((item) => item === 0);
+const itemNumber: number | undefined = [0].findLast((item) => item === 0);
+>itemNumber : number
 >[0].findLast((item) => item === 0) : number
 >[0].findLast : { <S extends number>(predicate: (this: void, value: number, index: number, obj: readonly number[]) => value is S, thisArg?: any): S; (predicate: (value: number, index: number, obj: readonly number[]) => unknown, thisArg?: any): number; }
 >[0] : number[]
@@ -10,6 +11,19 @@
 >item === 0 : boolean
 >item : number
 >0 : 0
+
+const itemString: string | undefined = ["string"].findLast((item) => item === "string");
+>itemString : string
+>["string"].findLast((item) => item === "string") : string
+>["string"].findLast : { <S extends string>(predicate: (this: void, value: string, index: number, obj: readonly string[]) => value is S, thisArg?: any): S; (predicate: (value: string, index: number, obj: readonly string[]) => unknown, thisArg?: any): string; }
+>["string"] : string[]
+>"string" : "string"
+>findLast : { <S extends string>(predicate: (this: void, value: string, index: number, obj: readonly string[]) => value is S, thisArg?: any): S; (predicate: (value: string, index: number, obj: readonly string[]) => unknown, thisArg?: any): string; }
+>(item) => item === "string" : (this: void, item: string) => boolean
+>item : string
+>item === "string" : boolean
+>item : string
+>"string" : "string"
 
 new Int8Array().findLast((item) => item === 0);
 >new Int8Array().findLast((item) => item === 0) : number
@@ -147,7 +161,8 @@ new BigUint64Array().findLast((item) => item === BigInt(0));
 >BigInt : BigIntConstructor
 >0 : 0
 
-[0].findLastIndex((item) => item === 0);
+const indexNumber: number = [0].findLastIndex((item) => item === 0);
+>indexNumber : number
 >[0].findLastIndex((item) => item === 0) : number
 >[0].findLastIndex : (predicate: (value: number, index: number, obj: readonly number[]) => unknown, thisArg?: any) => number
 >[0] : number[]
@@ -158,6 +173,19 @@ new BigUint64Array().findLast((item) => item === BigInt(0));
 >item === 0 : boolean
 >item : number
 >0 : 0
+
+const indexString: number = ["string"].findLastIndex((item) => item === "string");
+>indexString : number
+>["string"].findLastIndex((item) => item === "string") : number
+>["string"].findLastIndex : (predicate: (value: string, index: number, obj: readonly string[]) => unknown, thisArg?: any) => number
+>["string"] : string[]
+>"string" : "string"
+>findLastIndex : (predicate: (value: string, index: number, obj: readonly string[]) => unknown, thisArg?: any) => number
+>(item) => item === "string" : (item: string) => boolean
+>item : string
+>item === "string" : boolean
+>item : string
+>"string" : "string"
 
 new Int8Array().findLastIndex((item) => item === 0);
 >new Int8Array().findLastIndex((item) => item === 0) : number
